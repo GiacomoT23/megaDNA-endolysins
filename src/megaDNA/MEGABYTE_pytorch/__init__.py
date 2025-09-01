@@ -1,0 +1,1 @@
+from src.megaDNA.MEGABYTE_pytorch.megabyte import MEGABYTE

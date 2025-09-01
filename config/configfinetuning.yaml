@@ -1,0 +1,13 @@
+learning_rate: 0.00002
+epochs: 30
+batch_size: 1
+gradient_accumulate_every: 1
+warmup_steps: 4500 #50000
+plateau_steps: 12000 #600000
+decay_steps: 2500 #50000
+schedule_type: warmup_only #può essere warmup_only o warmup_cosine
+gradient_clip_norm: 0.5
+training_accuracy_every: 48 #48
+validation_accuracy_every: 8 #8
+splits_ratios: [0.95, 0.05]
+steps_avg_loss: 100 #500
