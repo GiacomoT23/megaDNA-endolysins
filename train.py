@@ -575,7 +575,7 @@ if __name__ == '__main__':
         else:
             world_size = torch.cuda.device_count()  # Usa tutte le GPU disponibili se non specificato
     else:
-        world_size = 2  # Se si usa la CPU, il world_size è 2 per usare 2 cpu
+        world_size = 1
     '''
     if not use_cpu and torch.cuda.is_available():
         training_accuracy_every = TRAINING_ACCURACY_EVERY / (BATCH_SIZE * world_size)
