@@ -138,10 +138,10 @@ makeblastdb -in Data/essentialproteins/essentials_proteins.faa \
 
 
 Run:
-
+'''bash
 python test_phagelambda.py
 python test_knockout_essentials.py
-
+'''
 
 Outputs:
 
@@ -156,9 +156,9 @@ Histograms: loss_distribution.png, likelihood_distribution.png, loglikelihood_di
 Annotate many genomes with Prokka, run Roary to compute the pangenome, then for each genome KO the most-represented vs least-represented gene groups; compare wild_type vs most_rep_KO vs least_rep_KO by loss/likelihood.
 
 Run:
-
+'''bash
 python test_pangenome.py
-
+'''
 
 Outputs:
 
